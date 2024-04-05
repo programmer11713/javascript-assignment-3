@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+main {
+    min-height: 80vh;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --color-primary: rgb(255, 0, 0);
+    --color-secondary: rgb(0, 0, 92);
+    --color-accent: rgb(255, 136, 0);
+}
+
+::selection {
+    background: var(--color-accent);
+    color: var(--color-secondary);
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+*, h4, p {
+    font-size: 1.75rem; 
+}
+
+p {
+    font-weight: 500;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.nav-logo {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 4rem;
+    color: var(--color-accent);
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-primary);
+    transition: all 0.35s;
+}
+
+a:hover {
+    color: var(--color-accent);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: var(--color-secondary);
+}
+
+ul {
+    display: flex;
+}
+
+header li {
+    margin-left: 2.5rem;
+}
+
+footer {
+    background: var(--color-secondary);
+    text-align: center;
+    color: var(--color-accent);
+    padding: 2rem;
+}
+
+footer a:hover {
+    color: pink;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;   
+}
+
+.news-section {
+    padding: 0 10rem;
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.news-item {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 2rem hsl(0, 0%, 80%);
+    border-radius: 0.25rem;
+    width: 25rem;
+    height: 40rem;
+    text-align: center;
+    margin: 0 1rem 5rem 1rem;
+    position: relative; 
+    transition: all 0.25s; 
+}
+
+.news-item:hover {
+    box-shadow: 0 0 2rem #aaa;
+    transform: scale(1.1);
+}
+
+.news-item h3 {
+    margin-top: 3rem;
+    padding: 0 1rem;
+}
+
+.news-item p {
+    margin-top: 0.5rem;
+    padding: 0 0.5rem;
+}
+
+.news-item a {
+    margin-top: 1rem;
+    position: absolute;
+    bottom: 2rem;
+    left: 35%;
+}
+
+.news-item img {
+    max-height: 20rem;
+    min-height: 20rem;
+    padding: 0 !important;
+}
